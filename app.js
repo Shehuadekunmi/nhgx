@@ -1,13 +1,4 @@
-// var date = new Date (Date.UTC (
-//     new Date ().getUTCFullYear (),
-//     new Date ().getUTCMonth (),
-//     new Date ().getUTCDate (),
-//     new Date ().getUTCHours (),
-//     new Date ().getUTCMinutes (),
-//     new Date ().getUTCSeconds ()
-//   ));
-//   var utcTime = date.toUTCString ();  
-//   document.getElementById ("cut").innerHTML = utcTime;
+
 
 
   var date = new Date(); 
@@ -24,6 +15,6 @@
 
 
 
-let weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][new Date().getDay()]
+let weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()]
 console.log(weekday);
 document.getElementById('day').innerHTML = weekday;

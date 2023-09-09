@@ -12,3 +12,16 @@
   console.log(dt.toISOString());
   // console.log(dt.toISOString().slice(0,-1)+offsetValue1);
  document.getElementById('tz').innerHTML = dt.toISOString()
+
+
+
+ var date = new Date (Date.UTC (
+    new Date ().getUTCFullYear (),
+    new Date ().getUTCMonth (),
+    new Date ().getUTCDate (),
+    new Date ().getUTCHours (),
+    new Date ().getUTCMinutes (),
+    new Date ().getUTCSeconds ()
+  ));
+  var utcTime = date.toUTCString ();  
+  document.getElementById ("cut").innerHTML = utcTime;

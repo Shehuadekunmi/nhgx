@@ -1,0 +1,48 @@
+#dayy{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+.img{
+    width: 100%;
+}
+.img img{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+[data-testid=“githubURL”]{
+    text-decoration: none;
+}
+
+@media (min-width:760px) {
+    .img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .img img{
+        height: 300px;
+    }
+
+    [data-testid="myTrack"], [data-testid="currentUTCTime"], [data-testid="currentDayOfTheWeek"],
+     [data-testid=“githubURL”]{
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1000px) {
+    .img img{
+        height: 400px;
+    }
+    .img{
+        width: 40%;
+    }
+
+    [data-testid="myTrack"], [data-testid="currentUTCTime"], [data-testid="currentDayOfTheWeek"],
+    [data-testid=“githubURL”]{
+        font-size: 30px;
+    }
+
+
+}
